@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test page for FME HTTPCaller extraction">
+    <meta name="generator" content="Manual Creation for FME Testing">
+    <meta name="project-code" content="FME-HTTP-TEST-001">
+    <title>FME HTTPCaller Test Page</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .highlight { background-color: yellow; font-weight: bold; }
+        #main-project-details { border: 1px dashed blue; padding: 15px; margin-bottom: 20px; }
+        #project-status { color: green; }
+    </style>
+</head>
+<body>
+
+    <h1>Project Alpha: Infrastructure Upgrade</h1>
+    <p>This page contains sample data structures to test data extraction using FME's HTTPCaller.</p>
+
+    <div id="main-project-details">
+        <h2>Main Project Information</h2>
+        <p><strong>Project Name:</strong> <span id="project-name">Infrastructure Upgrade</span></p>
+        <p><strong>Location:</strong> <span class="location-info">Downtown Core & West End</span></p>
+        <p><strong>Status:</strong> <span id="project-status" data-status-code="ACTIVE">Active</span></p>
+        <p><strong>Start Date:</strong> <span id="start-date">2024-01-15</span></p>
+        <p><strong>Estimated Completion:</strong> <span id="comp-date">2025-06-30</span></p>
+        <p class="internal-note">Internal Ref: PID-98765</p>
+    </div>
+
+    <h2>Project Tasks</h2>
+    <p>The following table outlines the key tasks involved:</p>
+    <table id="tasks-table">
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Description</th>
+                <th>Phase</th>
+                <th>Assigned Team</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>T001</td>
+                <td>Site Survey & Assessment</td>
+                <td>Planning</td>
+                <td>Survey Team A</td>
+                <td data-priority="high">2024-02-28</td>
+            </tr>
+            <tr>
+                <td>T002</td>
+                <td>Material Procurement</td>
+                <td>Procurement</td>
+                <td>Logistics Dept</td>
+                <td data-priority="medium">2024-05-31</td>
+            </tr>
+            <tr>
+                <td>T003</td>
+                <td class="highlight">Main Pipeline Installation</td>
+                <td>Execution</td>
+                <td>Construction Crew 1</td>
+                <td data-priority="high">2024-12-15</td>
+            </tr>
+            <tr>
+                <td>T004</td>
+                <td>System Testing</td>
+                <td>Testing</td>
+                <td>QA Team</td>
+                <td data-priority="medium">2025-03-31</td>
+            </tr>
+            <tr>
+                <td>T005</td>
+                <td>Final Inspection & Handover</td>
+                <td>Closing</td>
+                <td>Project Lead</td>
+                <td data-priority="low">2025-06-30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Affected Areas/Assets</h2>
+    <ul id="affected-assets">
+        <li>Main Street (100-500 Block)</li>
+        <li>Elm Avenue Pipeline</li>
+        <li>Central Substation</li>
+        <li>West End Comms Tower</li>
+    </ul>
+
+    <h2>Contact Information</h2>
+    <div id="contact-info">
+        <p>Lead: <span class="contact-name">Jane Doe</span></p>
+        <p>Email: <a href="mailto:jane.doe@example.com" id="contact-email">jane.doe@example.com</a></p>
+        <p>Phone: <span id="contact-phone">555-123-4567</span></p>
+    </div>
+
+    <!-- Embedded JSON data for more complex information -->
+    <h2>Additional Data (Embedded JSON)</h2>
+    <script type="application/json" id="project-details-json">
+    {
+        "projectCode": "FME-HTTP-TEST-001",
+        "version": "1.1",
+        "budget": {
+            "total": 5000000,
+            "currency": "CAD",
+            "spent": 1250000
+        },
+        "geo_location": {
+            "type": "Point",
+            "coordinates": [-123.1189, 49.2827],
+            "description": "Project Centroid Estimate"
+        },
+        "stakeholders": [
+            {"name": "City Council", "role": "Oversight"},
+            {"name": "Utility Corp", "role": "Partner"},
+            {"name": "Community Association", "role": "Consulted"}
+        ],
+        "risks": [
+            {"id": "R01", "description": "Weather Delays", "level": "Medium"},
+            {"id": "R02", "description": "Supply Chain Issues", "level": "Low"}
+        ],
+        "last_update_timestamp": "2024-07-26T10:30:00Z"
+    }
+    </script>
+    <p>The script tag above contains structured JSON data.</p>
+
+    <!-- Footer Information -->
+    <hr>
+    <footer>
+        <p>© 2024 FME Test Corp. Data generated for testing purposes.</p>
+        <p>Page Version: <span id="page-version">v2.3</span></p>
+    </footer>
+
+</body>
+</html>
